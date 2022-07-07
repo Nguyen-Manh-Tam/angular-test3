@@ -36,6 +36,13 @@
   Start editing to see some magic happen :)
 </p> -->
 
-<p [style]="{ color: 'red', backgroundColor: 'yellow', fontSize: '2rem' }">
+<p
+  [style.--text-color]="isDanger ? 'red' : 'blue'"
+  [style]="{
+    color: 'var(--text-color)',
+    backgroundColor: 'yellow',
+    fontSize: '2rem'
+  }"
+>
   Start editing to see some magic happen :)
 </p>
