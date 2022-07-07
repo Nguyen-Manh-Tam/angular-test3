@@ -1,0 +1,41 @@
+<!-- class-->
+
+<button (click)="isDanger = !isDanger">Toggle Danger</button>
+<button (click)="isWarning = !isWarning">Toggle Warning</button>
+
+<!-- <div
+  class="box"
+  [class.red-border]="isDanger"
+  [class.yellow-background]="isWarning"
+></div> -->
+
+<!--
+- [class.ten-class]
+- [class]="array"
+- [class]="object" {  }
+-->
+
+<!-- <div class="box" [class]="['red-border', 'yellow-background']"></div> -->
+
+<div [class]="classes"></div>
+
+<!-- Style -->
+
+<!-- 
+- [style.tenStyle]
+- [style.ten-style]
+- [style.tenStyle.unit]
+- [style]="object"
+ -->
+
+<!-- <p
+  [style.color]="'red'"
+  [style.background-color]="'yellow'"
+  [style.fontSize.rem]="2"
+>
+  Start editing to see some magic happen :)
+</p> -->
+
+<p [style]="{ color: 'red', backgroundColor: 'yellow', fontSize: '2rem' }">
+  Start editing to see some magic happen :)
+</p>
